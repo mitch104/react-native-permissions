@@ -93,7 +93,7 @@ public class ReactNativePermissionsModule extends ReactContextBaseJavaModule {
         // NOOP
       }
     };
-    mPermissionsModule.requestPermission(permission, PromiseImpl(resolve, reject));
+    mPermissionsModule.requestPermission(permission, new PromiseImpl(resolve, reject));
   }
 
 
